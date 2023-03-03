@@ -75,14 +75,20 @@ header .logo a{
   mix-blend-mode: overlay;
 }
 .text {
+  padding: 3%;
+  background: rgba(5, 30, 50, .7);
+  border-radius: 50px;
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text h2 {
   font-size: 5em;
   font-weight: 800;
-  color: #fff;
+  color: white;
   line-height: 1em;
   text-transform: uppercase;
 }

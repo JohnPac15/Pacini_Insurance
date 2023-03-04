@@ -78,11 +78,19 @@ header .logo a{
   padding: 3%;
   background: rgba(5, 30, 50, .7);
   border-radius: 50px;
-  position: relative;
+  /* position: relative; */
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact {
+  color: white;
+  z-index: 1;
+  background: rgba(5, 30, 50, .7);
+  border-radius: 50px;
+  padding: 3%;
 }
 
 .text h2 {

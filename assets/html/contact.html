@@ -10,8 +10,8 @@
 </head>
 <body>
     <section class="showcase">
-        <header>
-            <h2 class="logo"><a href="../../index.html">Pacini Insurance</a></h2>
+        <header class="p-2">
+            <h2 class="logo"><a href="../../index.html" class="p-3">Pacini Insurance</a></h2>
             <div class="toggle">
             </div>
         </header>
@@ -20,27 +20,86 @@
 
         <div class="overlay"></div>
 
-        <div class="text">
-            <h2>HOw to reach us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nostrum soluta. Aut atque deserunt facilis neque libero ipsam fugit, sequi obcaecati voluptatem cupiditate quos earum? Distinctio delectus illo ut accusamus!
-            </p>
+        <div class="contact">
+            <h2>How to reach us</h2>
 
-            <form action="https://formsubmit.co/John@paciniinsurance.com" method="POST">
-            <!-- <form> -->
+            <form method="POST" action="https://formspree.io/John@paciniinsurance.com" class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Phone Number</label>
+                  <input type="phone" class="form-control" id="inputPhone4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Texas</option>
+                  </select>
+                </div>
+
+                <!-- \I want to add an option to choose which type of insurance you want -->
+
+                <!-- <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Texas</option>
+                  </select>
+                </div> -->
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        
+
+           
+
+            <!-- <form action="https://formsubmit.co/John@paciniinsurance.com" method="POST">
                 <div class="mb-3">
                     <label for="InputEmail1" class="form-label">Email address</label>
-                    <input type="email" name="autoresponse" class="form-control" id="InputEmail" aria-describedby="emailHelp" value="Thank you for reaching out to South Texas Margaritas. Will Contact shortly to Schedule your rental.">
+                    <input type="email" name="autoresponse" class="form-control" id="InputEmail" aria-describedby="emailHelp" value="email">
                 </div>
                 <div class="mb-3">
-                    <!-- <label for="Inputsubject" class="form-label"></label> -->
+                    <label for="Inputsubject" class="form-label"></label>
                     <input type="hidden" class="form-control" id="InputSubject" value="Margarit Rental">
                 </div>
                 <div class="mb-3">
-                    <!-- <label for="Inputsubject" class="form-label"></label> -->
+                    <label for="Inputsubject" class="form-label"></label>
                     <input type="text" class="form-control" name="honey" style="display: none;">
                 </div>
                 <div class="mb-3">
-                    <!-- <label for="Inputsubject" class="form-label"></label> -->
+                    <label for="Inputsubject" class="form-label"></label>
                     <input type="hidden" name="_template" value="table">                
                 </div>
                 <div class="mb-3">
@@ -55,9 +114,9 @@
                     <label for="exampleInputPassword1" class="form-label">Address</label>
                     <input type="phone" class="form-control" id="inputAddress">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button> -->
                 <!-- <a  href="mailto:john@paciniinsurnace.com?subject=Margarita_Rental" type="submit" class="btn btn-primary">Submit</a> -->
-            </form>
+            
 
         </div>
 

@@ -6,7 +6,7 @@
 }
 header {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   width: 100%;
   padding: 40px 100px;
@@ -21,6 +21,8 @@ header .logo a{
   cursor: pointer;
   text-decoration: none;
 }
+
+
 
 .toggle {
   position: relative;
@@ -74,6 +76,15 @@ header .logo a{
   background: #8ba2ad;
   mix-blend-mode: overlay;
 }
+
+.middlecontent{
+  display: flex;
+  /* border: 3px blue solid; */
+  flex-direction: column;
+  /* position: relative; */
+  /* top: 100px; */
+}
+
 .text {
   padding: 3%;
   background: rgba(5, 30, 50, .7);
@@ -144,25 +155,22 @@ header .logo a{
   letter-spacing: 6px;
 }
 
-.social {
-  position: absolute;
+.socialDiv {
+  /* position: absolute; */
   z-index: 10;
-  bottom: 20px;
+  /* bottom: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social li {
-  list-style: none;
-}
-.social li a {
+.socialDiv a {
   display: inline-block;
   margin-right: 20px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover {
+.socialDiv a:hover {
   transform: scale(0.5) translateY(-15px);
 }
 .menu {
@@ -232,5 +240,50 @@ header .logo a{
   }
   .text h3 {
     font-size: 2em;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+
+  .middlecontent{
+    display: flex;
+    /* border: 3px red solid; */
+    flex-direction: column;
+    position: relative;
+    top: 58px;
+  }
+  .text {
+    z-index: 1000;
+    padding: 3%;
+    background: rgba(5, 30, 50, .7);
+    border-radius: 50px;
+    /* position: relative; */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialDiv {
+    padding: 3%;
+    /* border: red 3px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .middlecontent {
+    /* border: white 5px solid; */
+    position: relative;
+    /* font-size: 15px; */
+    top: 0px;
+  }
+
+  .text {
+    font-size: 12px;
   }
 }

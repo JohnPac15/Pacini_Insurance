@@ -22,8 +22,6 @@ header .logo a{
   text-decoration: none;
 }
 
-
-
 .toggle {
   position: relative;
   width: 60px;
@@ -79,24 +77,32 @@ header .logo a{
 
 .middlecontent{
   display: flex;
-  /* border: 3px blue solid; */
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
-  /* position: relative; */
-  /* top: 100px; */
+  /* border: 3px blue solid; */
+  position: relative;
+  top: 40px;
 }
 
 .text {
   padding: 3%;
   background: rgba(5, 30, 50, .7);
   border-radius: 50px;
-  /* position: relative; */
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* position: relative; */
 }
 
 .contact {
+  position: relative;
+  /* border: 3px red solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   z-index: 1;
   background: rgba(5, 30, 50, .7);
@@ -272,6 +278,17 @@ header .logo a{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+  }
+
+  .contact {
+    font-size: 12px;
+  }
+
+  .contact h2{
+    font-size: 16px;
+  }
+  .contact h3 {
+    font-size: 14px;
   }
 }
 

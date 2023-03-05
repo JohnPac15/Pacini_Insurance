@@ -220,6 +220,8 @@ header .logo a{
     align-items: center;
     justify-content: space-between;
     padding: 1%;
+    background: rgba(5, 30, 50, .7);
+    border-radius: 50px;
 }
 
 .items h1{

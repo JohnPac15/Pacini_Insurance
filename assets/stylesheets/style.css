@@ -41,16 +41,19 @@ header .logo a{
 }
 .showcase {
   position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  transition: 0.5s;
-  z-index: 2;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 100px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 .showcase.active {
   right: 300px;
@@ -220,6 +223,8 @@ header .logo a{
     align-items: center;
     justify-content: space-between;
     padding: 1%;
+    background: rgba(5, 30, 50, .7);
+    border-radius: 50px;
 }
 
 .items h1{
@@ -235,6 +240,79 @@ header .logo a{
   font-weight: 400;
   max-width: 700px;
 }
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, .3);
+  width: -webkit-fill-available;
+  border: black 3px solid;
+  height: 50px;
+  background-color: #f5f6f6;
+}
+
+.bottom-bar .title{
+  position: absolute;
+  background: #34495C;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #f5f6f6;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.bottom-bar ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  animation: scroll 80s infinite linear;
+  transform: translateX(100%);
+}
+
+.bottom-bar ul li{
+  font: "Poppins", sans-serif;
+  white-space: nowrap;
+  padding: 10px 24px;
+  color: #34495C;
+  position: relative;
+
+}
+
+
+.bottom-bar ul li::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0
+  ;
+}
+
+.bottom-bar ul li:last-child::after{
+  display: none;
+}
+
+#train {
+  height: 10px;
+}
+
+@keyframes scroll {
+  form {
+    transform: translateX(110%);
+  }
+
+  to {
+    transform: translateX(-350%);
+  }
+}
+
 
 @media (max-width: 991px) {
   .showcase,

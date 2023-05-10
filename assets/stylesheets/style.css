@@ -114,6 +114,11 @@ header .logo a{
   padding: 3%;
 }
 
+.agents {
+  display: flex;
+  margin: 2%;
+}
+
 .text h2 {
   font-size: 5em;
   font-weight: 800;

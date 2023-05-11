@@ -16,39 +16,45 @@
             </div>
         </header>
 
-        <video src="../images/Top_down-Office.mp4" width=100% muted loop autoplay></video>
+        <video id="myContactVideo" src="../images/Top_down-Office.mp4" width=100% muted loop autoplay></video>
 
         <div class="overlay"></div>
         <div class="middlecontent">
 
           <div class="contact">
               <h1>Contact Us</h1>
+
+              <div class="mailing">
+                <h2>Mailing Address</h2>
+                <address class="badge bg-secondary">3402 E. Del Mar Bvd., ste 160, PMB 101 Laredo, TX 78041</address>
+              </div>
+
               <div class="agents">
-                <div class="card text-secondary">
-                  <div class="card-header">
+                <div class="card text-secondary" id="contact-john">
+                  <div id="cardName" class="card-header">
                     John Pacini - San Antonio, Texas
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Life Insurance and Annuites Specialist</h5>
-                    <p class="card-text">Robert is our go to guy for your typical home and Auto policies. Reahc out to Roberto if you need any help</p>
-                    <a href="#" class="btn btn-primary">Contact Me</a>
+                    <h5 id="cardTitle" class="card-title">Life Insurance and Annuites Specialist</h5>
+                    <p class="card-text">John is the agency’s Life Insurance and Annuities specialist. He still helps anyone who needs a homeowners and Auto policy, but he works primarily with our Life insurance and annuity clients. John has built a strong relationship with Hermann Sons Life and acts as one of Hermann Son’s Regional Sales Managers. John has years of experience with all forms of Insurance and is the perfect person to call if you have any questions about either of your policies.</p>
+                    
                   </div>
                 </div>
 
-                <div class="card text-secondary">
-                  <div class="card-header">
+                <div class="card text-secondary" id="contact-roberto">
+                  <div id="cardName" class="card-header">
                     Roberto Hurtado - Laredo, Texas
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Personal and Commerical Lines</h5>
-                    <p class="card-text">Robert is our go to guy for your typical home and Auto policies. Reahc out to Roberto if you need any help</p>
+                    <h5 id="cardTitle" class="card-title">Personal and Commerical Lines</h5>
+                    <p class="card-text">Roberto is Pacini Insurance’s GO-TO guy for any property and casualty policy. Roberto came to help Pacini Insurance handle our growing client base and help John service any current policyholders. Roberto is from Laredo, Texas, and serving our Spanish-speaking clients has been vital to Pacini Insurance. Roberto has tons of knowledge and will help you find the answers to any of your insurance questions. </p>
                     <a href="#" class="btn btn-primary">Contact Me</a>
                   </div>
                 </div>
 
               </div>
               
-                <h4>Complete the form below and one of our agents will contact you shortly</h4>
+                <h4>Complete the form below to start your quote.</h4>
     
                 <form method="POST" action="https://formspree.io/f/xeqwkvoa" class="row g-3">
                     <div class="col-md-6">
@@ -85,20 +91,27 @@
     
                     <!-- \I want to add an option to choose which type of insurance you want -->
     
-                    <!-- <div class="col-md-4">
-                      <label for="inputState" class="form-label">State</label>
-                      <select id="inputState" class="form-select">
+                    <div class="col-md-4">
+                      <label for="inputType" class="form-label">Type of Insurance needed</label>
+                      <select id="inputType" class="form-select">
                         <option selected>Choose...</option>
-                        <option>Texas</option>
+                        <option>Home and Auto</option>
+                        <option>Homeowners</option>
+                        <option>Auto</option>
+                        <option>Renters</option>
+                        <option>Life</option>
+                        <option>Annuites</option>
+                        <option>Motorcycle</option>
+                        <option>RV or recreational vehicle</option>
                       </select>
-                    </div> -->
+                    </div>
     
                     <div class="col-md-2">
                       <label for="inputZip" class="form-label">Zip</label>
                       <input type="text" class="form-control" id="inputZip" name="Zip Code">
                     </div>
                     
-                    <div class="col-12">
+                    <div id="contactBtn"class="col-12">
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </form>

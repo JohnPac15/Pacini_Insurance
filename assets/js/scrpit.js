@@ -3,6 +3,8 @@
 var toggle = document.querySelector(".toggle");
 var showcase = document.querySelector(".showcase");
 
+var contactVid = document.getElementById("myContactVideo")
+
 function openMenu() {
   console.log(toggle.classList);
   if (toggle.classList.value == "toggle active") {
@@ -16,9 +18,9 @@ function openMenu() {
   }
 }
 
-function emailUs() {
-
-  
+function slowVideo() {
+  // console.log("HEY g÷hg Contact")
+  contactVid.playbackRate = .5
 }
-
+window.onload = slowVideo
 document.querySelector(".toggle").addEventListener("click", openMenu);

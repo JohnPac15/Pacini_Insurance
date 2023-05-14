@@ -1,3 +1,4 @@
+/* Every page Uses */
 * {
   margin: 0;
   padding: 0;
@@ -89,20 +90,33 @@ header .logo a{
   border: 3px blue solid;
   width: fit-content;
   padding: 1%;
+  background: rgba(5, 30, 50, .7);
+  border-radius: 50px;
+
+
 }
 
 .text {
   padding: 3%;
-  background: rgba(5, 30, 50, .7);
-  border-radius: 50px;
+  /* background: rgba(5, 30, 50, .7); */
+  /* border-radius: 50px; */
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: yellow 3px solid;
-  /* position: relative; */
 }
 
+/* Quote Page */
+#quote{
+  background: rgba(5, 30, 50, .7);
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  padding: 3%;
+
+}
+/* Contact Page */
 .contact {
   position: relative;
   display: flex;
@@ -111,15 +125,15 @@ header .logo a{
   justify-content: space-between;
   color: white;
   z-index: 1;
-  background: rgba(5, 30, 50, .7);
-  border-radius: 50px;
+  /* background: rgba(5, 30, 50, .7); */
+  /* border-radius: 50px; */
   padding: 3%;
-  /* border: 3px red solid; */
+  border: 3px pink solid;
 }
 .contact h1{
   font-weight: bolder;
   text-decoration: underline;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .mailing{
@@ -352,12 +366,21 @@ header .logo a{
 }
 
 /* About Page */
+#navbar {
+  /* border: white 3px solid; */
+  /* background: #a1a1a1; */
+  margin-bottom: 20px;
+}
 
-#ourInsurance {
+#navbar a{
+  border: black 2px solid;
+}
+
+/* #ourInsurance {
   border: red 3px solid;
   padding: 2%;
   margin: 1%;
-}
+} */
 
 #insurance-card {
   background: rgba(5, 30, 50, .7);
@@ -373,6 +396,11 @@ header .logo a{
   text-align: center;
 }
 
+#card-text{
+  margin: 0px 52px;
+  text-align: center;
+  border: blue 4px solid;
+}
 @keyframes scroll {
   form {
     transform: translateX(110%);

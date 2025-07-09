@@ -97,6 +97,7 @@ header .logo a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4px;
   /* position: relative; */
 }
 
@@ -311,6 +312,10 @@ header .logo a{
 
 #train {
   height: 10px;
+}
+
+#info{
+  color: red;
 }
 
 @keyframes scroll {

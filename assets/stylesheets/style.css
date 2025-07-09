@@ -26,14 +26,14 @@ header .logo a{
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background: url();
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   cursor: pointer;
 }
 .toggle.active {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
+  /* background: url(https://i.ibb.co/rt3HybH/close.png; */
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -143,7 +143,7 @@ header .logo a{
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 850px;
 }
 .text form {
   display: inline-block;
@@ -315,7 +315,12 @@ header .logo a{
 }
 
 #info{
-  color: red;
+  font-size: large;
+}
+#info h3{
+  text-transform: none;
+  font-weight: lighter;
+  font-family: initial;
 }
 
 @keyframes scroll {
@@ -397,3 +402,4 @@ header .logo a{
     font-size: 12px;
   }
 }
+toggle.active
